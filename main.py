@@ -1,7 +1,7 @@
 import random
 
 
-def generateRandomNumber(minimum, maximum):
+def generateRandomNumber():
     return random.randint(int(minimum), int(maximum))
 
 
@@ -19,7 +19,7 @@ if __name__ == "__main__":
                 print("The maximum number must be higher than the minimum number.")
             else:
                 print("The random number between " + minimum + " and " + maximum + " is",
-                      int(generateRandomNumber(minimum, maximum)))
+                      int(generateRandomNumber()))
         else:
             print("Please enter a number as maximum.")
 
